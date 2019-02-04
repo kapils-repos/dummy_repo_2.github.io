@@ -1,11 +1,8 @@
 deploy:
   provider: pages
-  local-dir: ./site
   target-branch: master
-  email: talend.kapil@gmail.com
-  name: Deployment Bot
   skip-cleanup: true
-  github-token: $GITHUB_TOKEN
+  github-token: $GITHUB_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep-history: true
   on:
     branch: release
