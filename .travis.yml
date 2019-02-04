@@ -1,0 +1,16 @@
+language: ruby
+cache: bundler
+branches:
+  only:
+  - release
+deploy:
+  provider: pages
+  local-dir: ./site
+  target-branch: master
+  email: talend.kapil@gmail.com
+  name: Deployment Bot
+  skip-cleanup: true
+  github-token: $GITHUB_TOKEN
+  keep-history: true
+  on:
+    branch: release
