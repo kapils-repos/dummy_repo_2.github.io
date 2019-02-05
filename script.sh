@@ -7,5 +7,5 @@ echo $localFolder
 git clone $repository1 $localFolder
 cd $localFolder
 git remote add destination $repository2
-git pull destination master
+git pull destination master --no-edit
 git push origin master
