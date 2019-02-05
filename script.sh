@@ -8,4 +8,5 @@ git clone $repository1 $localFolder
 cd $localFolder
 git init
 git remote set-url origin $repository2
+git pull
 git push origin master
