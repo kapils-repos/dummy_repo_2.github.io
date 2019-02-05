@@ -7,6 +7,6 @@ echo $localFolder
 git clone $repository1 $localFolder
 cd $localFolder
 git init
-git remote set-url origin $repository2
-git pull .
+git remote add destination $repository2
+git pull destination master --no-edit
 git push origin master
